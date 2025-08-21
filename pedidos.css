@@ -173,7 +173,7 @@ body {
     position: absolute;
     left: 3vh;
     width: 50%;
-    top: 300vh;
+    top: 100vh;
   }
  
   label {
@@ -259,4 +259,5 @@ body {
    top: 220vh;
    width: 60vh;
   }
+
 
