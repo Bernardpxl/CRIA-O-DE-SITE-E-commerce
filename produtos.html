@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Camisas</title>
+    <title>Pedidos - Loja de Camisas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,47 +12,80 @@
         <div class="logo">
             <h1>Loja de Camisas</h1>
         </div>
-        <div class="cart">
-            <span class="cart-icon">🛒</span>
-            <span class="cart-count">0</span>
-        </div>
     </header>
 
-    <!-- Lista de Produtos -->
-    <section class="product-list">
-        <div class="product-card">
-            <img src="camisa1.jpg" alt="Camisa Estampada">
-            <h2>Camisa Estampada</h2>
-            <p>R$ 59,90</p>
-            <button class="add-to-cart">Adicionar ao Carrinho</button>
-        </div>
-        <div class="product-card">
-            <img src="camisa2.jpg" alt="Camisa Básica">
-            <h2>Camisa Básica</h2>
-            <p>R$ 39,90</p>
-            <button class="add-to-cart">Adicionar ao Carrinho</button>
-        </div>
-        <div class="product-card">
-            <img src="camisa3.jpg" alt="Camisa Polo">
-            <h2>Camisa Polo</h2>
-            <p>R$ 89,90</p>
-            <button class="add-to-cart">Adicionar ao Carrinho</button>
-        </div>
-    </section>
+    <!-- Lista de Pedidos -->
+    <section class="order-list">
+        <h2>Meus Pedidos</h2>
 
-    <!-- Carrinho de Compras -->
-    <section class="cart-popup">
-        <div class="cart-content">
-            <h2>Carrinho de Compras</h2>
-            <ul class="cart-items">
-                <li>Camisa Estampada - R$ 59,90</li>
-                <li>Camisa Básica - R$ 39,90</li>
-            </ul>
-            <div class="total">
-                <p>Total: R$ 99,80</p>
+        <!-- Pedido 1 -->
+        <div class="order-card">
+            <h3>Pedido #001</h3>
+            <div class="order-details">
+                <div class="order-item">
+                    <span class="item-name">Camisa Estampada</span>
+                    <input type="number" class="item-quantity" value="2" min="1">
+                    <span class="item-price">R$ 59,90</span>
+                    <span class="item-total">R$ 119,80</span>
+                </div>
+                <div class="order-item">
+                    <span class="item-name">Camisa Básica</span>
+                    <input type="number" class="item-quantity" value="1" min="1">
+                    <span class="item-price">R$ 39,90</span>
+                    <span class="item-total">R$ 39,90</span>
+                </div>
             </div>
-            <button class="checkout">Finalizar Compra</button>
-            <button class="close-cart">Fechar</button>
+            <div class="order-info">
+                <div>
+                    <label for="order-status">Status:</label>
+                    <select id="order-status">
+                        <option value="pending">Pendente</option>
+                        <option value="shipped">Enviado</option>
+                        <option value="delivered">Entregue</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="order-address">Endereço de Entrega:</label>
+                    <input type="text" id="order-address" value="Rua Exemplo, 123, São Paulo, SP">
+                </div>
+                <div>
+                    <label for="order-comments">Comentários:</label>
+                    <textarea id="order-comments" rows="4" placeholder="Observações sobre o pedido"></textarea>
+                </div>
+            </div>
+            <button class="update-order">Atualizar Pedido</button>
+        </div>
+
+        <!-- Pedido 2 -->
+        <div class="order-card">
+            <h3>Pedido #002</h3>
+            <div class="order-details">
+                <div class="order-item">
+                    <span class="item-name">Camisa Polo</span>
+                    <input type="number" class="item-quantity" value="1" min="1">
+                    <span class="item-price">R$ 89,90</span>
+                    <span class="item-total">R$ 89,90</span>
+                </div>
+            </div>
+            <div class="order-info">
+                <div>
+                    <label for="order-status">Status:</label>
+                    <select id="order-status">
+                        <option value="pending">Pendente</option>
+                        <option value="shipped">Enviado</option>
+                        <option value="delivered">Entregue</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="order-address">Endereço de Entrega:</label>
+                    <input type="text" id="order-address" value="Avenida Exemplo, 456, Rio de Janeiro, RJ">
+                </div>
+                <div>
+                    <label for="order-comments">Comentários:</label>
+                    <textarea id="order-comments" rows="4" placeholder="Observações sobre o pedido"></textarea>
+                </div>
+            </div>
+            <button class="update-order">Atualizar Pedido</button>
         </div>
     </section>
 </body>
