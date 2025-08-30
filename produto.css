@@ -1,103 +1,140 @@
-/* Resetando alguns estilos padrão */
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+
+*{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos do corpo */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
+  background: #fff;
+  font-family: "Questrial", sans-serif;
+  overflow-x:hidden;
+  min-height: 250vh;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Cabeçalho */
-header {
-    background-color: #222;
-    color: white;
-    padding: 15px;
-    text-align: center;
+#pag1 {
+    background: url('unnamed\ \(2\).jpg');
+    background-blend-mode: multiply; 
+    background-size: cover;
+    height: 110vh;
 }
 
-header h1 {
-    font-size: 24px;
+#pagina81 {
+  background-color: #09003F;
+  background-blend-mode: multiply; 
+  background-size: cover;
+  height: 315vh;
 }
 
-/* Detalhes do Produto */
-.product-detail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px;
+#pagina91{
+  background-color: #B0C3D0;
+  background-blend-mode: multiply; 
+  background-size: cover;
+  height: 33vh;
 }
-
-.product-info {
-    display: flex;
-    gap: 20px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.product-info img {
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
-}
-
-.details {
-    max-width: 400px;
-}
-
-.details h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.details .price {
-    font-size: 22px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.details .description {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.product-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.product-actions label {
-    font-size: 16px;
-}
-
-.product-actions input {
-    width: 60px;
-    padding: 5px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.add-to-cart {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 4px;
+.menu{
+    background: #B0C3D0;
+      height: 99px;
+      vertical-align: middle;
+  }
+  
+  .logo{
+    width: 20%;
+     height: auto;
+    margin-left: 18%;
+    margin-top: 4vh;
+    vertical-align: middle;
+    margin-bottom: 4vh;
+    bottom: 4vh;
+  }
+  
+  nav {
+      display: flex;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 45%);
+      padding: 15px 50px;
+  }
+  nav ul {
+      width: 100%;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  nav li {
+      height: 50px;
+  }
+  nav a {
+      height: 100%;
+      padding: 0 30px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: #000;
+      transition: all 0.3s ease;
+      font-size: 0.9em;
+      font-weight: 500;
+  }
+  nav a.active { 
+      color: #002BFF; 
+  } 
+  nav a:hover {
+      color: #002BFF;
+  }
+  nav svg {
     cursor: pointer;
-    font-size: 16px;
-}
+      margin-right: 100px;
+      fill: #000;
+  }
+  
+  .centro {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 590px;
+    height: 160px;
+    background: #000;
+    padding: 45px 60px;
+    top: 55vh;
+  }
+  .centro h1 {
+    text-align: center;
+    font-weight: 200;
+    color: #fff;
+    font-size: 40px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+  }
 
-.add-to-cart:hover {
-    background-color: #218838;
-}
+  .produtos{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+  }
+  .produtos h1{
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    margin-top: 30px;
+    position: absolute;
+    left: 11.9%;
+    font-family: Lobster;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .produtos p{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    margin-top: 370px;
+    position: absolute;
+    left: 1%;
+    font-family: Lobster;
+    text-align: center;
+    margin-bottom: 50px;
+  }
