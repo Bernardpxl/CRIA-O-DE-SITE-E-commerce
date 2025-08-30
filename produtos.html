@@ -1,108 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce</title>
-    <link rel="stylesheet" href="produto.css">
+    <title>Loja de Camisas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="pag1">
-        <header id="header">
-            <nav class="menu">
-                <a href="index.html"><img src="download (44).png" class="logo"></a>
-                <ul>
-                    <li><a href="index.html" class="active">Início</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-                    <li><a href="pedidos.html">Pedidos</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                </ul>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 17 17"><g></g> <path d="M16.604 15.868l-5.173-5.173c0.975-1.137 1.569-2.611 1.569-4.223 0-3.584-2.916-6.5-6.5-6.5-1.736 0-3.369 0.676-4.598 1.903-1.227 1.228-1.903 2.861-1.902 4.597 0 3.584 2.916 6.5 6.5 6.5 1.612 0 3.087-0.594 4.224-1.569l5.173 5.173 0.707-0.708zM6.5 11.972c-3.032 0-5.5-2.467-5.5-5.5-0.001-1.47 0.571-2.851 1.61-3.889 1.038-1.039 2.42-1.611 3.89-1.611 3.032 0 5.5 2.467 5.5 5.5 0 3.032-2.468 5.5-5.5 5.5z"/></svg>
-            </nav>
-        </header>
-            <div class="centro">
-                <h1>Pedidos</h1><br>
-            </div>
-        </section>
-        <section id="pagina21">
-        <div class="pedidos">
-          <h1>🛒 Página de Pedidos – T-Shirt Garajau’s
-         <br>Faça seu Pedido:</h1>
-         <p>👤 Dados do Cliente</p>
-         
-          <form action="#" method="post">
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" name="nome" required>
-      
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-      
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required>
-            
-            <button type="submit" class="buttonpedidos">Enviar Pedido</button>
-          </form>
-          <p class="itens">👕 Itens do Pedido</p>
-           
-          <form action="#" class="form2" method="post">
-            
-            <label for="produto" class="produto1">Produto:</label>
-            <input type="text" name="produto">
-
-            <label for="tamanho">Tamanho:</label>
-            <input type="text" name="tamanho">
-
-            <label for="Cor">Cor:</label>
-            <input type="text" name="cor">
-
-            <label for="quantidade">Quantidade</label>
-            <input type="number" name="quantidade" min="1">
-
-            <label for="Preço Unitário (R$):">Preço Unitário (R$):</label>
-            <input type="number" name="preco" step="0.01">
-
-            
-          </form>
-          <p class="itens4">📦 Endereço de Entrega</p>
-  
-
-          <form action="#" class="form3" method="post">
-            
-            <input type="text" name="Entrega">
-         
-            
-          </form>
-          <p class="itens5">💳 Forma de Pagamento</p>
-          <form action="#" class="form4" method="post">
-            
-            <input type="text" name="pagamento">
-            </form>
-            <p class="itens6">📃 Observações</p>
-            <form action="#" class="form5" method="post">
-
-              <input type="text" name="Observações">
-            </form>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Loja de Camisas</h1>
         </div>
+        <div class="cart">
+            <span class="cart-icon">🛒</span>
+            <span class="cart-count">0</span>
         </div>
-        </section>
+    </header>
 
-        <section id="pagina31">
-          <div class="rodape">
-              <img src="download (44).png"  class="rodimg" height="270px" width="270px" alt="">
-          </div>
-          <div class="rdp">
-            <div class="endereco">
-              <p>ENDEREÇO: R. Santo Antônio, 680 - Buritis, <br> Belo Horizonte - MG, 25611-342</p>
-              <p> Redes Sociais</p>
-             <a href=""><img src="download (20).png" width="50" alt=""></a>
-         <a href="#"><img src="download (19).png" width="50" alt=""></a>
-         <a href="#"><img src="download (17).png" width="50" alt=""></a>
-             <p>© 2025-2025   garajau.com, T-Shirt</p>
+    <!-- Lista de Produtos -->
+    <section class="product-list">
+        <div class="product-card">
+            <img src="camisa1.jpg" alt="Camisa Estampada">
+            <h2>Camisa Estampada</h2>
+            <p>R$ 59,90</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product-card">
+            <img src="camisa2.jpg" alt="Camisa Básica">
+            <h2>Camisa Básica</h2>
+            <p>R$ 39,90</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product-card">
+            <img src="camisa3.jpg" alt="Camisa Polo">
+            <h2>Camisa Polo</h2>
+            <p>R$ 89,90</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <!-- Carrinho de Compras -->
+    <section class="cart-popup">
+        <div class="cart-content">
+            <h2>Carrinho de Compras</h2>
+            <ul class="cart-items">
+                <li>Camisa Estampada - R$ 59,90</li>
+                <li>Camisa Básica - R$ 39,90</li>
+            </ul>
+            <div class="total">
+                <p>Total: R$ 99,80</p>
             </div>
-          </div>
-          </section>
+            <button class="checkout">Finalizar Compra</button>
+            <button class="close-cart">Fechar</button>
+        </div>
+    </section>
 </body>
-
 </html>
-
