@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Camisas - Produtos</title>
-    <link rel="stylesheet" href="produto.css">
+    <title>Camisa Estampada - Loja de Camisas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -14,41 +14,22 @@
         </div>
     </header>
 
-    <!-- Grade de Produtos -->
-    <section class="product-grid">
-        <h2>Produtos</h2>
-        <div class="grid-container">
-            <div class="product-card">
-                <a href="produto.html?id=1">
-                    <img src="camisa1.jpg" alt="Camisa Estampada">
-                    <h3>Camisa Estampada</h3>
-                    <p>R$ 59,90</p>
-                </a>
-            </div>
-            <div class="product-card">
-                <a href="produto.html?id=2">
-                    <img src="camisa2.jpg" alt="Camisa Básica">
-                    <h3>Camisa Básica</h3>
-                    <p>R$ 39,90</p>
-                </a>
-            </div>
-            <div class="product-card">
-                <a href="produto.html?id=3">
-                    <img src="camisa3.jpg" alt="Camisa Polo">
-                    <h3>Camisa Polo</h3>
-                    <p>R$ 89,90</p>
-                </a>
-            </div>
-            <div class="product-card">
-                <a href="produto.html?id=4">
-                    <img src="camisa4.jpg" alt="Camisa Manga Longa">
-                    <h3>Camisa Manga Longa</h3>
-                    <p>R$ 79,90</p>
-                </a>
+    <!-- Detalhes do Produto -->
+    <section class="product-detail">
+        <div class="product-info">
+            <img src="camisa1.jpg" alt="Camisa Estampada">
+            <div class="details">
+                <h2>Camisa Estampada</h2>
+                <p class="price">R$ 59,90</p>
+                <p class="description">Uma camisa estilosa com estampa moderna, perfeita para o seu dia a dia. Feita com material confortável e de alta qualidade.</p>
+                <div class="product-actions">
+                    <label for="quantity">Quantidade:</label>
+                    <input type="number" id="quantity" value="1" min="1">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
             </div>
         </div>
     </section>
 
 </body>
 </html>
-
