@@ -295,5 +295,42 @@ body {
 
 
 
+.produtos-container {
+  background-color: #09003F;
+  padding: 30px 10px;
+  text-align: center;
+  color: white;
+  margin-top: 175px;
+}
+
+.produtos-container h2 {
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.produto {
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.produto img {
+  width: 194%;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+}
+.produto .img2{
+  width: 180%;
+  height: 240px;
+}
 
 
