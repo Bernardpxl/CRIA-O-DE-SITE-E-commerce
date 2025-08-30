@@ -20,7 +20,7 @@ body {
     height: 110vh;
 }
 
-#pagina21 {
+#pagina91 {
   background-color: #09003F;
   background-blend-mode: multiply; 
   background-size: cover;
@@ -107,7 +107,7 @@ body {
     margin-bottom: 20px;
   }
 
-  .pedidos{
+  .produtos{
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -115,7 +115,7 @@ body {
     justify-content: center;
     align-content: center;
   }
-  .pedidos h1{
+  .produtos h1{
     font-size: 80px;
     font-weight: bold;
     color: white;
@@ -127,7 +127,7 @@ body {
     margin-bottom: 50px;
   }
 
-  .pedidos p{
+  .produtos p{
     font-size: 60px;
     font-weight: bold;
     color: white;
@@ -291,6 +291,7 @@ body {
    top: 240vh;
    width: 60vh;
   }
+
 
 
 
