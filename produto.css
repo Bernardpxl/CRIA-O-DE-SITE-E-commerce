@@ -192,6 +192,7 @@ body {
 .produtos {
   text-align: center;
   padding: 40px 20px;
+      background-color: #09003F;
 }
 
 .produtos h1 {
@@ -263,6 +264,7 @@ body {
   font-size: 0.95em;
   line-height: 1.5em;
 }
+
 
 
 
