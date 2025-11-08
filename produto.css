@@ -192,10 +192,6 @@ body {
 .produtos {
   text-align: center;
   padding: 40px 20px;
-      background-color: #09003F;
-  background-blend-mode: multiply; 
-  background-size: cover;
-  height: 315vh;
 }
 
 .produtos h1 {
@@ -232,15 +228,17 @@ body {
   box-shadow: 0 0 10px rgba(255,255,255,0.1);
 }
 
+/* Link estilizado como botão */
 .btn {
   background-color: #e0e0e0;
   color: #000;
   border: 2px solid #1e90ff;
   padding: 10px 25px;
-  cursor: pointer;
+  text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
   transition: all 0.3s ease;
+  display: inline-block;
 }
 
 .btn:hover {
