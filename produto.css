@@ -257,13 +257,16 @@ body {
 .info ul {
   list-style: none;
   padding: 0;
+  
 }
 
 .info li {
   margin: 8px 0;
   font-size: 0.95em;
   line-height: 1.5em;
+      color: white;
 }
+
 
 
 
